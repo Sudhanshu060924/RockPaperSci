@@ -2,10 +2,19 @@ package su.dhanshu.rockpapersci
 
 fun main(){
     var computerChoice = ""
-    var userChoice = ""
+    val userChoice = ""
 
     println("enter your choice Rock , Paper , Scissors")
     userChoice = readln()
+
+    while (userChoice !="Rock" && userChoice !=  "Paper" && userChoice !="Scissors"){
+        println("the choice is invalid , please re-enter")
+        userChoice = readln()
+
+
+    }
+
+
 
     var randomNumber = (1..3).random()
     when (randomNumber) {
@@ -30,6 +39,8 @@ fun main(){
     }
     if (winner == "Tie"){
         println("Its a tie")
+
+
     }else {
         println("The winner is :"+ " " + winner)
     }
