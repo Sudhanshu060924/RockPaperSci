@@ -2,7 +2,7 @@ package su.dhanshu.rockpapersci
 
 fun main(){
     var computerChoice = ""
-    val userChoice = ""
+    var userChoice = ""
 
     println("enter your choice Rock , Paper , Scissors")
     userChoice = readln()
